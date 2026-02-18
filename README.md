@@ -105,6 +105,8 @@ Based on AIC minimization, the best-fitting model was:
 
 AIC: 2296.227
 
+The Akaike Information Criterion (AIC) values of all 23 models are presented below.
+
 <p align="center">
   <img src="https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/19381b7126905bda11fb008de64c607dfab7280b/Model_AIC.png"  width="600"/>
   <br>
@@ -138,11 +140,13 @@ A new dataset (newdt) containing 7 observations was created using the five selec
 
 Steps:
 
-* Construct new input data
+* Construct a new data frame (newdt)
 
-* Apply predict() using the fitted GAMLSS model
+* Apply predict() using the fitted GAMLSS model (exGAUS)
 
 * Store predictions in predicted_temperature
+
+The first figure shows the creation of the new data frame (newdt), and the second figure presents the predicted temperatures generated using the Exponential Gaussian (exGAUS) model.
 
 <p align="center">
   <img src="https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/810104434b5491457e24b75f2ad2739787521c14/NewDataCreate.png" width="600"/>
