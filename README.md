@@ -1,72 +1,113 @@
-## R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach
-This project performs statistical modeling and prediction of temperature patterns in the United Kingdom using atmospheric and environmental variables. The analysis identifies key temperature predictors and develops a robust predictive model using Generalized Additive Models for Location, Scale, and Shape (GAMLSS) framework.
+# 📈 R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach
 
-### 📊 (a)	Perform a preliminary analysis on your data, this usually involves exploratory plots.
+<p align="center">
+  <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R"/>
+  <img src="https://img.shields.io/badge/Statistics-Modeling-blue?style=for-the-badge" alt="Statistics"/>
+  <img src="https://img.shields.io/badge/GAMLSS-Framework-green?style=for-the-badge" alt="GAMLSS"/>
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" alt="Status"/>
+</p>
 
-📝 A subset of data specific to the United Kingdom was extracted from the Wthr_data dataset.
-The resulting dataset contains:
+<p align="center">
+  <b>📊 Statistical Modeling & Prediction of Temperature Patterns in the United Kingdom</b>
+</p>
 
-358 observations
+---
 
-18 variables
+## 📋 Project Overview
 
-No missing values
+This project performs **statistical modeling and prediction of temperature patterns** in the United Kingdom using atmospheric and environmental variables. The analysis identifies key temperature predictors and develops a robust predictive model using **Generalized Additive Models for Location, Scale, and Shape (GAMLSS)** framework.
 
-The response variable is temperature (°F), ranging from 28.6°F to 91.0°F, indicating substantial variability in weather conditions. All explanatory variables are numeric.
+---
 
-Histogram Interpretation
+## 📊 (a) Perform a preliminary analysis on your data, this usually involves exploratory plots.
 
-The distribution shows a peak between 50°F and 55°F
+### 📝 Data Extraction & Summary
 
-Black line → Kernel density estimate (smoothed distribution)
+A subset of data specific to the United Kingdom was extracted from the **Wthr_data** dataset.
 
-Red dashed line → Normal distribution comparison
+<div align="center">
 
-![Histrogram](https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/e9e62b7fa22f008540f8cb41fdc3586119e32e1f/histogram.png)
+| 📊 Metric | 🔢 Value |
+|-----------|----------|
+| **Observations** | 358 |
+| **Variables** | 18 |
+| **Missing Values** | 0 |
+| **Response Variable** | Temperature (°F) |
+| **Temperature Range** | 28.6°F - 91.0°F |
 
-### (b) Find an appropriate statistical model for the response variable in your data using the explanatory variables. This usually involves selecting: 
-  1. an appropriate distribution for your response variable and 
-  2. a selection of relevant explanatory variables to explain the response.
+</div>
 
-This section consists of two parts: first, the explanatory variables are selected based on their correlation with the response variable; then, the best model is identified to fit the data.
+> ℹ️ **Note**: The response variable is temperature (°F), ranging from 28.6°F to 91.0°F, indicating substantial variability in weather conditions. All explanatory variables are numeric.
 
-1️⃣ Correlation Analysis between Explanatory Variables and the Response Variable
-The dataset contains 18 variables in total, of which 17 are considered explanatory variables. Initially, the correlation between each explanatory variable and the response variable (temperature) will be examined.
-The dataset contains 17 explanatory variables.
-To reduce overfitting:
+### 📈 Histogram Interpretation
 
-Strongest correlations selected:
+The distribution shows a prominent peak between **50°F and 55°F**, indicating that most temperature values fall within this range.
 
-uv_index
+- ⚫ **Black line** → Kernel density estimate (smoothed distribution)
+- 🔴 **Red dashed line** → Normal distribution comparison
 
-air_quality_Ozone
+<p align="center">
+  <img src="https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/e9e62b7fa22f008540f8cb41fdc3586119e32e1f/histogram.png" alt="Histogram" width="600"/>
+  <br>
+  <em>Figure 3.1: Histogram for Temperature (°F) variable distribution</em>
+</p>
 
-humidity
+---
 
-Weak correlations included for comparison:
+## 🎯 (b) Find an appropriate statistical model for the response variable in your data using the explanatory variables.
 
-moon_illumination
+<details>
+<summary><b>📋 This section consists of two parts:</b></summary>
+<br>
 
-cloud
+1. **Selecting an appropriate distribution** for the response variable
+2. **Selecting relevant explanatory variables** to explain the response
 
-Final modeling dataset:
+</details>
 
-5 explanatory variables
+### 1️⃣ Correlation Analysis between Explanatory Variables and the Response Variable
 
-1 response variable (temperature)
-The correlation between the response variable and all explanatory variables is shown in Figure-3.3.
+The dataset contains **18 variables** in total, of which **17 are considered explanatory variables**. Initially, the correlation between each explanatory variable and the response variable (temperature) will be examined.
 
-![Correlation](https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/885fdac2e490547adb080a5fff23949279277a54/Correlation.png)
+#### 🎯 Variable Selection Strategy
 
-2️⃣ Choosing appropriate distribution for the response variable
+To reduce overfitting, variables were selected based on correlation strength:
 
-The following R libraries were used:
+<div align="center">
 
-gamlss
+| 🔥 Strongest Correlations | 🌙 Weakest Correlations |
+|---------------------------|------------------------|
+| ✅ `uv_index` | ✅ `moon_illumination` |
+| ✅ `air_quality_Ozone` | ✅ `cloud` |
+| ✅ `humidity` | |
 
-gamlss.ggplot
+</div>
 
-pacman
+#### 📦 Final Modeling Dataset:
+
+<div align="center">
+
+| Variable Type | Count |
+|---------------|-------|
+| **Explanatory Variables** | 5 |
+| **Response Variable** | 1 (temperature) |
+
+</div>
+
+The correlation between the response variable and all explanatory variables is shown below:
+
+<p align="center">
+  <img src="https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/885fdac2e490547adb080a5fff23949279277a54/Correlation.png" alt="Correlation Analysis" width="600"/>
+  <br>
+  <em>Figure 3.3: Correlation between response variable and all explanatory variables</em>
+</p>
+
+### 2️⃣ Choosing appropriate distribution for the response variable
+
+#### 📚 R Libraries Used:
+library(gamlss)
+library(gamlss.ggplot)
+library(pacman)
 
 The chooseDist() function identified 23 candidate distributions.
 Based on AIC minimization, the best-fitting model was:
