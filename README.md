@@ -9,4 +9,4 @@ the x-axis represents temperature in degrees Fahrenheit (°F), while the y-axis 
 that most temperature values fall within this range. The black line represents the kernel density estimate, which provides a smoothed version of the data distribution. The red dashed line shows the normal 
 distribution curve based on the sample mean and standard deviation, allowing for comparison between the observed and theoretical distributions.
 
-![Histrogram](https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/81c13eab0a070b91b1dd55bca06261a9333fb21a/Hist.png)
+![Histrogram]()
