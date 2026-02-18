@@ -221,7 +221,7 @@ AIC: 2296.227
 <p align="center">
   <img src="https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/19381b7126905bda11fb008de64c607dfab7280b/Model_AIC.png"  width="600"/>
   <br>
-  <em>Figure 3.3: Correlation between response variable and all explanatory variables</em>
+  <em>Figure: AIC values of all Models</em>
 </p>
 
 
@@ -239,7 +239,7 @@ Interpretation
 <p align="center">
   <img src="https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/810104434b5491457e24b75f2ad2739787521c14/Worm-Plot_exGAUS.png" width="600"/>
   <br>
-  <em>Figure 3.3: Correlation between response variable and all explanatory variables</em>
+  <em>Figure: worm plot of exGAUS model</em>
 </p>
 
 
@@ -260,14 +260,14 @@ Steps:
 <p align="center">
   <img src="https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/810104434b5491457e24b75f2ad2739787521c14/NewDataCreate.png" width="600"/>
   <br>
-  <em>Figure 3.3: Correlation between response variable and all explanatory variables</em>
+  <em>Figure: created new data (newdt) </em>
 </p>
 
 
 <p align="center">
   <img src="https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/810104434b5491457e24b75f2ad2739787521c14/Pred_nw_data.png" width="600"/>
   <br>
-  <em>Figure 3.3: Correlation between response variable and all explanatory variables</em>
+  <em>Figure: predicted response values based on new data</em>
 </p>
 
 
