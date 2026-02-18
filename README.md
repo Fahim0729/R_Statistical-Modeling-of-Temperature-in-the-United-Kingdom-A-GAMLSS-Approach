@@ -30,7 +30,7 @@ Red dashed line → Normal distribution comparison
 
 This section consists of two parts: first, the explanatory variables are selected based on their correlation with the response variable; then, the best model is identified to fit the data.
 
-1. Correlation Analysis between Explanatory Variables and the Response Variable
+1️⃣ Correlation Analysis between Explanatory Variables and the Response Variable
 The dataset contains 18 variables in total, of which 17 are considered explanatory variables. Initially, the correlation between each explanatory variable and the response variable (temperature) will be examined.
 The dataset contains 17 explanatory variables.
 To reduce overfitting:
@@ -58,19 +58,51 @@ The correlation between the response variable and all explanatory variables is s
 
 ![Correlation](https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/885fdac2e490547adb080a5fff23949279277a54/Correlation.png)
 
-2. Choosing appropriate distribution for the response variable
-First, the required libraries (gamlss, gamlss.ggplot, and pacman) are loaded. Then, the chooseDist function is used to determine which distributions can be applied to the data. A total of 23 distributions are found to be suitable for the dataset (Figure-3.10). Based on the AIC value of 2296.227, the exGaus (exponentially modified Gaussian) distribution is selected as the best model (Figure-3.11).
+2️⃣ Choosing appropriate distribution for the response variable
+
+The following R libraries were used:
+
+gamlss
+
+gamlss.ggplot
+
+pacman
+
+The chooseDist() function identified 23 candidate distributions.
+Based on AIC minimization, the best-fitting model was:
+
+✅ Exponential Gaussian (exGAUS)
+
+AIC: 2296.227
 
 ![Model_AIC](https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/19381b7126905bda11fb008de64c607dfab7280b/Model_AIC.png)
 
 ### (c) Use diagnostics to check the assumptions of the model.
-In the worm plot (Figure-3.13), the binned standardized residual points fall mostly within the 95% confidence bands, suggesting no major deviations from normality and confirming that the model provides a good fit to the data. 
+🧪 Model assumptions were evaluated using a worm plot.
+
+Interpretation
+
+Residuals lie mostly within the 95% confidence bands
+
+No major deviations from normality
+
+Indicates good model fit
 
 ![Worm_plot](https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/810104434b5491457e24b75f2ad2739787521c14/Worm-Plot_exGAUS.png)
 
 
 ### (d) Use the model for prediction.
-To make predictions, a new dataset named newdt was created, containing 7 data points with values for the five selected explanatory variables (Figure-3.15). The predict() function was then used to generate the corresponding temperature predictions, which were stored in a new column titled predicted_temperature (Figure-3.16).
+🔮 Prediction
+
+A new dataset (newdt) containing 7 observations was created using the five selected predictors.
+
+Steps:
+
+Construct new input data
+
+Apply predict() using the fitted GAMLSS model
+
+Store predictions in predicted_temperature
 
 ![Create_nw_data](https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/810104434b5491457e24b75f2ad2739787521c14/NewDataCreate.png)
 
