@@ -218,6 +218,12 @@ Based on AIC minimization, the best-fitting model was:
 
 AIC: 2296.227
 
+<p align="center">
+  <img src="https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/19381b7126905bda11fb008de64c607dfab7280b/Model_AIC.png"  width="600"/>
+  <br>
+  <em>Figure 3.3: Correlation between response variable and all explanatory variables</em>
+</p>
+
 ![Model_AIC](https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/19381b7126905bda11fb008de64c607dfab7280b/Model_AIC.png)
 
 ### (c) Use diagnostics to check the assumptions of the model.
@@ -231,7 +237,12 @@ Interpretation
 
 -- Indicates good model fit
 
-![Worm_plot](https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/810104434b5491457e24b75f2ad2739787521c14/Worm-Plot_exGAUS.png)
+<p align="center">
+  <img src="https://github.com/Fahim0729/R_Statistical-Modeling-of-Temperature-in-the-United-Kingdom-A-GAMLSS-Approach/blob/810104434b5491457e24b75f2ad2739787521c14/Worm-Plot_exGAUS.png" width="600"/>
+  <br>
+  <em>Figure 3.3: Correlation between response variable and all explanatory variables</em>
+</p>
+
 
 
 ### (d) Use the model for prediction.
