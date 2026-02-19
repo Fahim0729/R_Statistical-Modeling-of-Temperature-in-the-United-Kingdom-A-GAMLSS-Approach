@@ -100,7 +100,7 @@ library(gamlss)
 library(gamlss.ggplot)
 library(pacman)
 
-The chooseDist() function identified 23 candidate distributions.
+The chooseDist() function identified **23** candidate distributions.
 Based on AIC minimization, the best-fitting model was:
 
 ✅ Exponential Gaussian (exGAUS)
@@ -118,7 +118,7 @@ The Akaike Information Criterion (AIC) values of all 23 models are presented bel
 
 
 ## 🧪 (c) Use diagnostics to check the assumptions of the model.
- Model assumptions were evaluated using a worm plot.
+ Model(exGAUS) assumptions were evaluated using a worm plot.
 
 📝 Interpretation
 
@@ -139,6 +139,7 @@ The Akaike Information Criterion (AIC) values of all 23 models are presented bel
 ## 🔮 (d) Use the model for prediction.
 
 📝 Prediction
+
 A new dataset (newdt) containing 7 observations was created using the five selected predictors.
 
 Steps:
