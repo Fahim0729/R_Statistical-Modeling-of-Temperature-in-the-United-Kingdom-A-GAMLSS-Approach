@@ -52,8 +52,8 @@ The distribution shows a prominent peak between 50°F and 55°F, indicating that
 <summary><b>📋 This section consists of two parts:</b></summary>
 <br>
 
-1. **Selecting an appropriate distribution** for the response variable
-2. **Selecting relevant explanatory variables** to explain the response
+1. **Selecting relevant explanatory variables** to explain the response
+2. **Selecting an appropriate distribution** for the response variable
 
 </details>
 
